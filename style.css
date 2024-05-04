@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
+    font-family: Montserrat, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
 }
 
 html{
@@ -9,4 +21,71 @@ html{
 
 body{
     min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #0ea5e9;
+}
+
+.sidebar *{
+    color: white;
+    font-weight: 700;
+}
+
+.sidebar img{
+    display: block;
+    height: 1.25em;
+}
+
+.logo{
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar span{
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px ;
+}
+
+.sidebar li{
+    display: block;
+    padding-top:10px;
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    flex-shrink: 0;
+}
+
+.nav>ul li:first-child{
+    padding-top: 0;
+}
+
+.help>ul li:first-child{
+    padding-top: 0;
+}
+
+.help{
+    flex-shrink: 0;
+}
+
+.logo span{
+    font-size: 1.25em;
+    padding-left: 10px;
+}
+
+.logo img{
+    height: 30px;
 }
