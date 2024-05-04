@@ -28,8 +28,8 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    background-color: #0ea5e9;
+    gap: 30px;
+    background-color: #3498d5;
 }
 
 .sidebar *{
@@ -47,6 +47,7 @@ body{
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    padding-right: 10px;
 }
 
 .sidebar span{
@@ -67,6 +68,7 @@ body{
 
 .nav{
     flex-shrink: 0;
+    padding-right: 10px;
 }
 
 .nav>ul li:first-child{
@@ -79,6 +81,7 @@ body{
 
 .help{
     flex-shrink: 0;
+    padding-right: 10px;
 }
 
 .logo span{
@@ -88,4 +91,137 @@ body{
 
 .logo img{
     height: 30px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-rows: 150px 1fr;
+}
+
+.profile-pic img{
+    height: 2.25rem;
+    border-radius: 50%;
+}
+
+.header{
+    display: grid;
+    flex-direction: 1fr 2fr;
+    box-shadow: 0 5px 5px 0 #ccc;
+}
+
+.header-top{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.header-top div{
+    display: flex;
+    align-items: center;
+}
+
+.header-top div:first-child{
+    padding-left: 15px;
+}
+
+.header-top button{
+    width: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+#search{
+    display: inline-block;
+    width: 90%;
+    padding-left: 12px;
+    padding-right: 10px;
+}
+
+#search input{
+    height: 25px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid white;
+    background-color: #E4EAF0;
+}
+
+.header-top>div:last-child a{
+    font-weight: 700;
+}
+
+.header-top div:last-child{
+    padding-left: 10px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.header-bottom{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-bottom>div:first-child{
+    width: 100%;
+    display: flex;
+}
+
+.header-bottom div:last-child{
+    padding-right: 50px;
+}
+
+.header-bottom div:first-child span{
+    display: block;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom div:first-child a{
+    display: block;
+}
+
+.header-bottom div:first-child img{
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.welcome p{
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.welcome p:first-child{
+    padding-top: 15px;
+    padding-bottom: 2px;
+    font-size: 13px;
+}
+
+.welcome p:last-child{
+    font-size: 1.25rem;
+}
+
+.header-bottom div:last-child button{
+    height: 40px;
+    width: 90px;
+    border-radius: 25px;
+    background-color: #3498d5;
+    color: white;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+.header-bottom>div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.content{
 }

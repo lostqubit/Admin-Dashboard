@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Dashboard</title>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -29,20 +29,26 @@
     </div>
     <div class="main-content">
         <div class="header">
-            <div>
-                <button form="search">Search</button>
-                <form id="search" action="">
-                    <input type="text">
-                </form>
-                <button>Notifications</button>
-                <button>Profile Picture</button>
-                <a href="">Surya Prakash</a>
-            </div>
-            <div>
-                <button>Profile Picture</button>
+            <div class="header-top">
                 <div>
-                    <p>Hi there,</p>
-                    <p>Surya Prakash (@lostqubit)</p>
+                    <button form="search"><img src="/assets/icons/search.svg"></button>
+                    <form id="search" action="">
+                        <input type="text">
+                    </form>
+                </div>
+                <div>
+                    <button><img src="/assets/icons/notification.svg"></button>
+                    <span class="profile-pic"><a href=""><img src = "https://i.pinimg.com/736x/de/c1/9b/dec19b0624a1214d76cb2013745edc14.jpg"></a></span>
+                    <a href="">Surya Prakash</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div>
+                    <span><a href=""><img src="https://i.pinimg.com/736x/de/c1/9b/dec19b0624a1214d76cb2013745edc14.jpg"></a></span>
+                    <div class="welcome">
+                        <p>Hi there,</p>
+                        <p>Surya Prakash (@lostqubit)</p>
+                    </div>
                 </div>
                 <div>
                     <button>New</button>
@@ -120,7 +126,7 @@
                     <p>Version 2.0 will be released soon with working features and buttons!</p>
                 </div>
                 <div>
-                    <h3>Ads are welfcome!</h3>
+                    <h3>Ads are welcome!</h3>
                     <p>Do you want to scale your business up? Email directly and reach clients like never before!</p>
                 </div>
             </div>
